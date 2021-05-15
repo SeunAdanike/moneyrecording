@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import './UIs/first__screen.dart';
-import './providers/methodhelps.dart';
+import 'package:money_monitoring/UIs/first__screen.dart';
+
 import 'package:provider/provider.dart';
+
+import './UIs/adcodepassword.dart';
+
+import './providers/methodhelps.dart';
 
 void main() {
   runApp(
@@ -30,7 +34,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Money Management',
-        home: FirstScreen(),
+        home: AdcodePassword(),
+        routes: {
+          '/FirstScreen': (context) => FirstScreen(),
+        },
       ),
     );
   }

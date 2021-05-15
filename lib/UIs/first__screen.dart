@@ -14,6 +14,7 @@ import '../providers/methodhelps.dart';
 import '../models/expenses.dart';
 
 class FirstScreen extends StatefulWidget {
+  static const String routeName = '/FirstScreen';
   @override
   _FirstScreenState createState() => _FirstScreenState();
 }
